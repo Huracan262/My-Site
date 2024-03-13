@@ -123,7 +123,6 @@ h2 {
 }
 
 .about__author {
-  position: relative;
   border-radius: 10px;
 
   border: 5px solid darkgray;
@@ -131,6 +130,8 @@ h2 {
   box-shadow:
       5px 5px 10px rgba(0, 0, 0, 0.15),
       5px 5px 50px 50px white;
+
+  opacity: 0.9;
 }
 
 .button {

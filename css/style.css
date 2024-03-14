@@ -287,7 +287,20 @@ h2 {
   fill: #404a54;
 }
 
+@media (max-width: 1500px) {
+  body {
+    padding: 0 50px;
+  }
 
+  main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .projects__list {
+    grid-template-columns: 1fr 1fr;
+}
 
 .visually-hidden {
   position: absolute;

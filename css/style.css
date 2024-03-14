@@ -73,11 +73,13 @@ h1 {
   padding: 20px 0;
 
 
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
   /*text-transform: uppercase;*/
   font-size: 36px;
   text-align: center;
   font-weight: 700;
+  text-transform: uppercase;
+  color: #babdba;
 }
 
 .about {
@@ -98,13 +100,15 @@ h2 {
   margin: 0;
   padding: 0 0 50px;
 
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
   font-size: 36px;
   font-weight: 700;
   text-shadow:
-      20px 0 15px white,
-      -20px 0 15px white,
-      0 0 10px white;
+      20px 0 10px white,
+      -20px 0 10px white,
+      0 0 5px white;
+  text-transform: uppercase;
+  color: #babdba;
 }
 
 .about__description p {
@@ -114,16 +118,20 @@ h2 {
   font-size: 24px;
   color: #404a54;
 
-  background-color:  rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
+  background-color:  rgba(0, 0, 0, 0.02);
+  /*border-radius: 10px;*/
 }
 
 .about__author {
   border-radius: 10px;
+
+  border: 5px solid darkgray;
   /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);*/
   box-shadow:
       5px 5px 10px rgba(0, 0, 0, 0.15),
       5px 5px 50px 50px white;
+
+  opacity: 0.9;
 }
 
 .button {
@@ -138,18 +146,19 @@ h2 {
   border: 1px solid #404a54;
   border-radius: 10px;
 
-  transition: transform 50ms ease;
+  transition: transform 80ms ease, background-color 50ms ease, color 50ms ease;
 }
 
 .button:hover {
   color: white;
+  transform: scale(1.05);
 
   background-color: #404a54;
 }
 
 .button:active {
   color: lightgray;
-  transform: scale(0.98);
+  transform: scale(1);
 
   background-color: #404a54;
 }
@@ -172,16 +181,20 @@ h2 {
   margin: 0 auto;
   position: relative;
   border-radius: 10px;
+
+  transition: background-color 100ms ease, color 100ms ease, box-shadow 50ms ease, transform 50ms ease;
 }
 
 .projects__item:hover {
   filter: brightness(0.9);
   box-shadow: 0 0 10px rgba( 0,  0, 0, 0.3);
+  transform: scale(1.01);
 }
 
 .projects__item:active {
   filter: brightness(0.7);
   box-shadow: 0 0 10px rgba( 0,  0, 0, 0.3);
+  transform: scale(1);
 }
 
 .projects__item--training::before {
@@ -281,10 +294,19 @@ h2 {
 .social__link svg {
   width: 40px;
   height: 40px;
+  transition: transform 200ms ease;
 }
 
 .social__link svg:hover {
   fill: #404a54;
+
+  transform: scale(1.05);
+}
+
+.social__link svg:active {
+  fill: #404a54;
+
+  transform: scale(1);
 }
 
 @media (max-width: 1500px) {

@@ -21,13 +21,13 @@ body {
   margin: 0;
   padding: 5px 20px;
   
-  font-family: 'Caveat', cursive, 'PT Sans Narrow', sans-serif;
+  font-family: "Caveat", cursive, "PT Sans Narrow", sans-serif;
   color: #000000;
   
 
   background-color: #babdba;
   background-image:
-    url('../img/background.jpg'); 
+    url("../img/background.jpg");
   background-size: 500px;
   background-repeat: repeat;
   background-position: 0 0;
@@ -73,7 +73,7 @@ h1 {
   padding: 20px 0;
 
 
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: "Comic Sans MS", sans-serif;
   /*text-transform: uppercase;*/
   font-size: 36px;
   text-align: center;
@@ -100,7 +100,7 @@ h2 {
   margin: 0;
   padding: 0 0 50px;
 
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: "Comic Sans MS", sans-serif;
   font-size: 36px;
   font-weight: 700;
   text-shadow:
@@ -203,7 +203,7 @@ h2 {
   margin: 5px;
   padding: 0 10px;
 
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 17px;
   color: white;
 
@@ -221,7 +221,7 @@ h2 {
   padding: 0 10px;
   right: 0;
 
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 17px;
   color: white;
 
@@ -322,6 +322,7 @@ h2 {
 @media (max-width: 1250px) {
   .projects__list {
     grid-template-columns: 1fr 1fr;
+  }
 }
 
 .visually-hidden {
@@ -333,6 +334,6 @@ h2 {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0 );
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
